@@ -27,6 +27,7 @@ export default function Login() {
       client_secret: clientSecret
     }
     dispatch(await loginAction(params))
+    navigate(0)
   }
   const removeError = () => {
     dispatch(removeErrorAction())
