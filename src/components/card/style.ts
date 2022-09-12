@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const CardContainer = styled.div`
-  width: 300px;
+  width: 320px;
   height: 350px;
   border-radius: 10px;
   text-align: center;

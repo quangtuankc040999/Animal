@@ -1,12 +1,11 @@
 import { AnimalService } from "../../service/animal.api";
 import actionTypes from "./actionType";
-import {animalsList} from '../../listAnimal'
+// import {animalsList} from '../../listAnimal'
 
 export const getAnimalAction = async (page: number) => {
     try {
-        
-        // const res = await AnimalService.getAll(`/v2/animals?page=${page}`)
-        const res = animalsList
+        const res = await AnimalService.getAll(`/v2/animals?page=${page}`)
+        // const res = animalsList
         const listAnimal = res.data.animals.map((animal)=>{
             return {
                 id: animal.id,

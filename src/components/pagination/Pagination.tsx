@@ -36,8 +36,10 @@ export default function Pagination() {
         setStartIndex(startIndex + 3)
     }
     const getData = (index) => {
+        console.log('vo day');
+        
         const fetchData = async () => {
-            if(pagination && (startIndex + 3) == pagination.total_pages ) {
+            if(pagination && index != pagination.current_page ) {
                 dispatch(await getAnimalAction(index))
             }
           }

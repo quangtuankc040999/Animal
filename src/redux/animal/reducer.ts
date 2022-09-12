@@ -1,10 +1,9 @@
-import { IAnimal, IAction, AnimalState } from "../../interfaces/components";
+import { IAction, AnimalState } from "../../interfaces/components";
 import actionTypes from "./actionType";
 
 const initialState:AnimalState = {
     animals: [],
 }
-
 
 const animalReducer = (
     state: AnimalState = initialState,
